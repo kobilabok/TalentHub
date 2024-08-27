@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kobi Labok" />
+    <link rel="stylesheet" href="../stylesLogin.css" />
+    <title>TalentHub_Registration</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>TalentHub</h1>
+      <h3>Please fill out the registration form</h3>
+      <form action="">
+        <label for="first"> Username: </label>
+        <input
+          type="text"
+          id="first"
+          name="first"
+          placeholder="Enter your Username"
+          required
+        />
+
+        <label for="first"> Your email address: </label>
+        <input
+          type="text"
+          id="first"
+          name="first"
+          placeholder="Enter your Email"
+          required
+        />
+
+        <label for="password"> Password: </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your Password"
+          required
+        />
+
+        <label for="retypePassword"> Re-enter Password: </label>
+        <input
+          type="retypePassword"
+          id="retypePassword"
+          name="retypePassword"
+          placeholder="Re-enter your Password"
+          required
+        />
+
+        <div class="wrap">
+          <button type="submit" onclick="solve()">Submit</button>
+        </div>
+      </form>
+      <p>
+         Already registered?
+        <a href="./loginForm.html" style="text-decoration: none"> Sign In </a>
+      </p>
+    </div>
+  </body>
+</html>

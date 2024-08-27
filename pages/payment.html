@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kobi Labok" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>TalentHub_payment</title>
+  </head>
+  <body>
+    <div class="header">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">TalentHub</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./loginForm.html">Login</a></li>
+            <li><a href="#">Cart</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <br><br>
+    <h2>Enter your information and card detail to Pay</h2><br>
+    <form class="paymentForm" action="/url" method="GET">
+      <div>
+        <input id="nameOnCard" type="text" placeholder="Name on card">
+      </div>
+      <div>
+        <input id="cardNumber" type="text" placeholder="0000 0000 0000 0000">
+      </div>
+    </form>
+    <form>
+      <div class="wrap">
+        <input type="text" placeholder="MM / YY">    
+        <input type="text" placeholder="CVT">
+      </div>
+    </form>
+    <h3>all fields are required***</h3>
+    <button id="payTotalAmount">Pay $489.96</button><br>
+    <div id="purchaseText">
+      <p>
+        Thank you for your purchase! Once you paid, a confirmation email will
+        be sent to you shortly after your payment has been processed. 
+        <BR><BR>
+        Please check your inbox for details on your order and any additional 
+        information. If you have any questions or need further assistance, 
+        feel free to contact us.
+        </p>
+  </div><br><br>
+    <div class="questionsOrComments">
+      <p>Questions or Comments?</p>
+      <p>
+        <a href="#">Phone</a> | <a href="#">Email</a> | <a href="#">Address</a>
+      </p>
+    </div><br>
+    <div class="footer">
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/" class="fa fa-facebook"
+                ><img
+                  src="C:\dev\repos\TalentHubWebsite\images\facebookIcon.png"
+                  alt="Facebook Icon"
+              /></a>
+            </li>
+            <li><a href="#">TalentHub</a></li>
+            <li><a href="mailto: info@talentHub.com">info@talentHub.com</a></li>
+            <li><b>@ 2024</b></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>
