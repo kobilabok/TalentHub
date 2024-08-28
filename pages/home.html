@@ -9,24 +9,24 @@
     <title>TalentHub_Home</title>
 </head>
 <body>
-        <header>
-            <nav>
-                <ul>
-                  <li><a href="#">TalentHub</a></li>
-                  <li><a href="./about.html">About</a></li>
-                  <li><a href="./loginForm.html">Login</a></li>
-                  <li><a href="./shoppingCart.html">Cart</a></li>
-                </ul>
-            </nav>
-        </header><br>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">TalentHub</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./loginForm.html">Login</a></li>
+                <li><a href="./shoppingCart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header><br>
     <label for="artists"><h2>Find an Artist<h2></label>
         <div>
-            <select class="select" name="artists" id="artists">
+            <select class="select" name="artists" id="artists" onchange="window.location.href=this.value;">
                 <option disabled selected>select an artist</option>
-                <option value="photographer">Photographer</option>
-                <option value="portraitPainter">Portrait Painter</option>
-                <option value="djs">DJ's<a href="about.html"></option>
-                <option value="webDeveloper">Web Developer</option>
+                <option value="./listOfArtistsPortraitPainters.html">Photographer</option>
+                <option value="./listOfArtistsPortraitPainters.html">Portrait Painter</option>
+                <option value="./listOfArtistsPortraitPainters.html">DJ's<a href="about.html"></option>
+                <option value="./listOfArtistsPortraitPainters.html">Web Developer</option>
             </select>
         </div>
     <br><br>
