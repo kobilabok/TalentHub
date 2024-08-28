@@ -228,10 +228,10 @@ th, td{
     box-sizing: border-box;
     border: 1px solid #ddd;
     font-size: 1.2rem;
+    border-radius: .3rem;
 }
 
 .select,
-.wrap, 
 #nameOnCard,
 #cardNumber, 
 .quantity input,
