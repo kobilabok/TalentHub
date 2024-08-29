@@ -9,20 +9,21 @@
     <title>TalentHub_artistOffers</title>
   </head>
   <body>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="./home.html">TalentHub</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./loginForm.html">Login</a></li>
-            <li><a href="./shoppingCart.html">Cart</a></li>
-          </ul>
-        </nav>
-      </header>
-    <br><br>
+    <header class="header">
+      <div class="container">
+          <nav class="menu-header">
+              <ul class="list">
+                  <li class="list-Item"><a href="./home.html">TalentHub</a></li>
+                  <li class="list-Item"><a href="./about.html">About</a></li>
+                  <li class="list-Item"><a href="./loginForm.html">Login</a></li>
+                  <li class="list-Item"><a href="./shoppingCart.html">Cart</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
     <h2>Provided Services by the selected artist</h2>
     <br />
-    <div class="listOfArtists">
+    <div class="artists-list">
       <ul>
         <li>
           <img
@@ -39,8 +40,8 @@
           </p>
         </li>
       </ul>
-    </div><br><br>
-    <table class="providedServicesTable">
+    </div>
+    <table class="provided-services">
       <tr id="tableHeader">
         <th>List of Services</th>
         <th>Canvas Size</th>
@@ -52,17 +53,17 @@
           <th colspan="1" rowspan="3">Custom Portrait</th>
           <td>18 x 24</td>
           <td><strong>$99.99</strong></td>
-          <td><button id="addToCartButton">Add To Cart</button></td>
+          <td><button id="add-to-cart">Add To Cart</button></td>
         </tr>
         <tr>
           <td>24 x 24</td>
           <td><strong>$129.99</strong></td>
-          <td><button id="addToCartButton">Add To Cart</button></td>
+          <td><button id="add-to-cart">Add To Cart</button></td>
         </tr>
         <tr>
           <td>30 x 24</td>
           <td><strong>$159.99</strong></td>
-          <td style="height: 5rem;"><button id="addToCartButton">Add To Cart</button></td>
+          <td style="height: 5rem;"><button id="add-to-cart">Add To Cart</button></td>
         </tr>
       </tbody>
       <tbody>
@@ -70,17 +71,17 @@
           <th colspan="1" rowspan="3">Family Portrait</th>
           <td>18 x 24</td>
           <td><strong>$99.99</strong></td>
-          <td><button id="addToCartButton">Add To Cart</button></td>
+          <td><button id="add-to-cart">Add To Cart</button></td>
         </tr>
         <tr>
           <td>24 x 24</td>
           <td><strong>$129.99</strong></td>
-          <td><button id="addToCartButton">Add To Cart</button></td>
+          <td><button id="add-to-cart">Add To Cart</button></td>
         </tr>
         <tr>
           <td>30 x 24</td>
           <td><strong>$159.99</strong></td>
-          <td style="height: 5rem;"><button id="addToCartButton">Add To Cart</button></td>
+          <td style="height: 5rem;"><button id="add-to-cart">Add To Cart</button></td>
         </tr>
       </tbody>
       <tbody>
@@ -88,42 +89,39 @@
           <th colspan="1" rowspan="3">Pets Portrait</th>
           <td>18 x 24</td>
           <td><strong>$99.99</strong></td>
-          <td><button id="addToCartButton">Add To Cart</button></td>
+          <td><button id="add-to-cart">Add To Cart</button></td>
         </tr>
         <tr>
           <td>24 x 24</td>
           <td><strong>$129.99</strong></td>
-          <td><button id="addToCartButton">Add To Cart</button></td>
+          <td><button id="add-to-cart">Add To Cart</button></td>
         </tr>
         <tr>
           <td>30 x 24</td>
           <td><strong>$159.99</strong></td>
-          <td><button id="addToCartButton">Add To Cart</button></td>
+          <td><button id="add-to-cart"><a href="./shoppingCart.html">Add To Cart</a></button></td>
         </tr>
       </tbody>      
     </table>
     <br><br>
-    <div class="questionsOrComments">
+    <div class="questions-comments">
       <p>Questions or Comments?</p>
       <p>
         <a href="#">Phone</a> | <a href="#">Email</a> | <a href="#">Address</a>
       </p>
     </div><br>
-      <footer>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/" class="fa fa-facebook"
-                ><img
-                  src="C:\dev\repos\TalentHubWebsite\images\facebookIcon.png"
-                  alt="Facebook Icon"
-              /></a>
-            </li>
-            <li><a href="#">TalentHub</a></li>
-            <li><a href="mailto: info@talentHub.com">info@talentHub.com</a></li>
-            <li><b>@ 2024</b></li>
+    <footer class="footer" width="100%">
+      <div class="container">
+      <nav class="menu-footer">
+          <ul class="list">
+            <li class="list-Item"><a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" rel="external"><img src="C:\dev\repos\TalentHubWebsite\images\facebookIcon.png" alt="Facebook Icon"></a></li>
+            <li class="list-Item"><a href="#">TalentHub</a></li>
+            <li class="list-Item"><a href= "mailto: info@talentHub.com">info@talentHub.com</a></li>
+            <li class="list-Item">Questions</li>
+            <li class="list-Item"><b>@ 2024</b></li>
           </ul>
-        </nav>
-      </footer>
+      </nav>
+      </div>
+  </footer>
   </body>
 </html>

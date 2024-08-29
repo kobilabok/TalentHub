@@ -5,69 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kobi Labok" />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" href="../images/tabIcon.jfif">
+    <link rel="icon" href="../images/tabIcon.jfif" />
     <title>TalentHub_payment</title>
   </head>
   <body>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="./home.html">TalentHub</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./loginForm.html">Login</a></li>
-            <li><a href="./shoppingCart.html">Cart</a></li>
+    <header class="header">
+      <div class="container">
+        <nav class="menu-header">
+          <ul class="list">
+            <li class="list-Item"><a href="./home.html">TalentHub</a></li>
+            <li class="list-Item"><a href="./about.html">About</a></li>
+            <li class="list-Item"><a href="./loginForm.html">Login</a></li>
+            <li class="list-Item"><a href="./shoppingCart.html">Cart</a></li>
           </ul>
         </nav>
-      </header>
-    <br><br>
-    <h2>Enter your information and card detail to Pay</h2><br>
-    <form class="paymentForm" action="/url" method="GET">
-      <div>
-        <input id="nameOnCard" type="text" placeholder="Name on card">
       </div>
-      <div>
-        <input id="cardNumber" type="text" placeholder="0000 0000 0000 0000">
-      </div>
-    </form>
-    <form>
-      <div class="wrap">
-        <input type="text" placeholder="MM / YY">    
-        <input type="text" placeholder="CVT">
-      </div>
-    </form>
-    <h3>all fields are required***</h3>
-    <button id="payTotalAmount">Pay $489.96</button><br>
-    <div id="purchaseText">
+    </header>
+    <div>
+      <h2>Enter your information and card details to Pay</h2>
+    </div>
+    <div>
+      <form class="paymentForm" action="/url" method="GET">
+        <div>
+          <input id="nameOnCard" type="text" placeholder="Name on card" />
+        </div>
+        <div>
+          <input
+            id="cardNumber"
+            type="text"
+            placeholder="0000 0000 0000 0000"
+          />
+        </div>
+      </form>
+      <form>
+        <div class="wrap">
+          <input type="text" placeholder="MM / YY" />
+          <input type="text" placeholder="CVT" />
+        </div>
+      </form>
+    </div>
+    <div>
+      <h3>all fields are required***</h3>
+    </div>
+    <div>
+      <button id="pay-total-amount">Pay $489.96</button>
+    </div>
+    <div id="purchase-text">
       <p>
-        Thank you for your purchase! Once you paid, a confirmation email will
-        be sent to you shortly after your payment has been processed. 
-        <BR><BR>
-        Please check your inbox for details on your order and any additional 
-        information. If you have any questions or need further assistance, 
-        feel free to contact us.
-        </p>
-  </div><br><br>
-    <div class="questionsOrComments">
+        Thank you for your purchase! Once you paid, a confirmation email will be
+        sent to you shortly after your payment has been processed.
+        <br /><br />
+        Please check your inbox for details on your order and any additional
+        information. If you have any questions or need further assistance, feel
+        free to contact us.
+      </p>
+    </div>
+    <div class="questions-comments">
       <p>Questions or Comments?</p>
       <p>
         <a href="#">Phone</a> | <a href="#">Email</a> | <a href="#">Address</a>
       </p>
-    </div><br>
-      <footer>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/" class="fa fa-facebook"
+    </div>
+    <br />
+    <footer class="footer" width="100%">
+      <div class="container">
+        <nav class="menu-footer">
+          <ul class="list">
+            <li class="list-Item">
+              <a
+                href="https://www.facebook.com/"
+                class="fa fa-facebook"
+                target="_blank"
+                rel="external"
                 ><img
                   src="C:\dev\repos\TalentHubWebsite\images\facebookIcon.png"
                   alt="Facebook Icon"
               /></a>
             </li>
-            <li><a href="#">TalentHub</a></li>
-            <li><a href="mailto: info@talentHub.com">info@talentHub.com</a></li>
-            <li><b>@ 2024</b></li>
+            <li class="list-Item"><a href="#">TalentHub</a></li>
+            <li class="list-Item">
+              <a href="mailto: info@talentHub.com">info@talentHub.com</a>
+            </li>
+            <li class="list-Item">Questions</li>
+            <li class="list-Item"><b>@ 2024</b></li>
           </ul>
         </nav>
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>

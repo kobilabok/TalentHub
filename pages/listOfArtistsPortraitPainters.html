@@ -9,26 +9,28 @@
     <title>TalentHub_ListOfArtists</title>
   </head>
   <body>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="./home.html">TalentHub</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./loginForm.html">Login</a></li>
-            <li><a href="./shoppingCart.html">Cart</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header class="header">
+      <div class="container">
+          <nav class="menu-header">
+              <ul class="list">
+                  <li class="list-Item"><a href="./home.html">TalentHub</a></li>
+                  <li class="list-Item"><a href="./about.html">About</a></li>
+                  <li class="list-Item"><a href="./loginForm.html">Login</a></li>
+                  <li class="list-Item"><a href="./shoppingCart.html">Cart</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
     <br /><br />
     <h2>The most popular Portrait Painters in your area</h2>
     <br />
-    <div class="listOfArtists">
+    <div class="artists-list">
       <ul>
         <li>
           <img
             src="C:\dev\repos\TalentHubWebsite\images\emmaPainter.png"
-            alt="emmaPainter"
-            id="artistImage"
+            alt="emma-painter"
+            id="artist-image"
           />
           <p>
             I am Emma. My portrait painting service is dedicated to capturing
@@ -37,26 +39,26 @@
             heirloom, a professional likeness, or a unique gift, our portraits
             are crafted to be treasured for generations.
           </p>
-          <button id="viewOffersButton" onclick="window.open('./artistOffers.html', '_self');">View Offers</button>
+          <button id="view-offers" onclick="window.open('./artistOffers.html', '_self');">View Offers</button>
         </li>
         <li>
           <img
             src="C:\dev\repos\TalentHubWebsite\images\kevinPainter.png"
-            alt="kevinPainter"
-            id="artistImage"
+            alt="kevin-painter"
+            id="artist-image"
           />
           <p>
             Whether you're looking for a timeless family heirloom, a
             professional likeness, or a unique gift, our portraits are crafted
             to be treasured for generations.
           </p>
-          <button id="viewOffersButton" onclick="window.open('./artistOffers.html', '_self');">View Offers</button>
+          <button id="view-offers" onclick="window.open('./artistOffers.html', '_self');">View Offers</button>
         </li>
         <li>
           <img
             src="C:\dev\repos\TalentHubWebsite\images\susanPainter.png"
-            alt="susanPainter"
-            id="artistImage"
+            alt="susan-painter"
+            id="artist-image"
           />
           <p>
             My portrait painting service is dedicated to capturing the essence
@@ -64,13 +66,13 @@
             portraits. Whether you're looking for a timeless family heirloom, a
             professional likeness, or a unique gift.
           </p>
-          <button id="viewOffersButton" onclick="open('./artistOffers.html', '_self')">View Offers</button>
+          <button id="view-offers" onclick="open('./artistOffers.html', '_self')">View Offers</button>
         </li>
         <li>
           <img
             src="C:\dev\repos\TalentHubWebsite\images\markPainter.png"
-            alt="markPainter"
-            id="artistImage"
+            alt="mark-painter"
+            id="artist-image"
           />
           <p>
             Hello! I am Mark! I drink and paint at the same time! This makes me
@@ -78,32 +80,29 @@
             unique personalities and charm in a portrait that celebrates their
             place in your life.
           </p>
-          <button id="viewOffersButton" onclick="window.open('./artistOffers.html', '_self');">View Offers</button>
+          <button id="view-offers" onclick="window.open('./artistOffers.html', '_self');">View Offers</button>
         </li>
       </ul>
     </div>
     <br /><br />
-    <div class="questionsOrComments">
+    <div class="questions-comments">
       <p>Questions or Comments?</p>
       <p>
         <a href="#">Phone</a> | <a href="#">Email</a> | <a href="#">Address</a>
       </p>
     </div><br>
-      <footer>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/" class="fa fa-facebook"
-                ><img
-                  src="C:\dev\repos\TalentHubWebsite\images\facebookIcon.png"
-                  alt="Facebook Icon"
-              /></a>
-            </li>
-            <li><a href="#">TalentHub</a></li>
-            <li><a href="mailto: info@talentHub.com">info@talentHub.com</a></li>
-            <li><b>@ 2024</b></li>
+    <footer class="footer" width="100%">
+      <div class="container">
+      <nav class="menu-footer">
+          <ul class="list">
+            <li class="list-Item"><a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" rel="external"><img src="C:\dev\repos\TalentHubWebsite\images\facebookIcon.png" alt="Facebook Icon"></a></li>
+            <li class="list-Item"><a href="#">TalentHub</a></li>
+            <li class="list-Item"><a href= "mailto: info@talentHub.com">info@talentHub.com</a></li>
+            <li class="list-Item">Questions</li>
+            <li class="list-Item"><b>@ 2024</b></li>
           </ul>
-        </nav>
-      </footer>
+      </nav>
+      </div>
+  </footer>
   </body>
 </html>

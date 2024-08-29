@@ -9,55 +9,67 @@
     <title>TalentHub_Home</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">TalentHub</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./loginForm.html">Login</a></li>
-                <li><a href="./shoppingCart.html">Cart</a></li>
-            </ul>
-        </nav>
-    </header><br>
-    <label for="artists"><h2>Find an Artist<h2></label>
-        <div>
-            <select class="select" name="artists" id="artists" onchange="window.location.href=this.value;">
-                <option disabled selected>select an artist</option>
-                <option value="./listOfArtistsPortraitPainters.html">Photographer</option>
-                <option value="./listOfArtistsPortraitPainters.html">Portrait Painter</option>
-                <option value="./listOfArtistsPortraitPainters.html">DJ's<a href="about.html"></option>
-                <option value="./listOfArtistsPortraitPainters.html">Web Developer</option>
-            </select>
+    <header class="header">
+        <div class="container">
+            <nav class="menu-header">
+                <ul class="list">
+                    <li class="list-Item"><a href="#">TalentHub</a></li>
+                    <li class="list-Item"><a href="./about.html">About</a></li>
+                    <li class="list-Item"><a href="./loginForm.html">Login</a></li>
+                    <li class="list-Item"><a href="./shoppingCart.html">Cart</a></li>
+                </ul>
+            </nav>
         </div>
-    <br><br>
-    <h2>How it works</h2>
-    <div>
-        <p id="howItWorks">Are you looking for the right company for your job? At TalentHub we have already compiled all 
-            the information transparently for you. 
-            Do you like one or more service providers? 
-            Request up to four comparison offers quickly, easily and free of charge.</p>
+    </header>
+    <main>
+        <div class="option-menu">
+            <div class="container-1">
+                <h1 class="title">Welcome to TalentHub</h1>
+            </div>
+            <div class="description"> 
+                <p id="how-it-works">
+                    Check out our talented solo musicians to bring the perfect touch of intimacy to your event. From accordions to ukuleles, from bagpipes to violins, you can find em all here! 
+                    At TalentHub we have already compiled all the information transparently for you. Do you like one or more service providers? Request up to four comparison offers quickly, easily and free of charge.
+                </p>
+            </div>
+            <div class="container-2">
+                <select class="select" name="artists" id="artists" onchange="window.location.href=this.value;">
+                    <option disabled selected>Please select an Artist</option>
+                    <option value="./listOfArtistsPortraitPainters.html">Photographer</option>
+                    <option value="./listOfArtistsPortraitPainters.html">Portrait Painter</option>
+                    <option value="./listOfArtistsPortraitPainters.html">DJ's<a href="about.html"></option>
+                    <option value="./listOfArtistsPortraitPainters.html">Web Developer</option>
+                </select>
+            </div>
+        </div>
+    <div class="main-description">
     </div>
-    <br><br>
-    <h2>The most popular services in your area</h2>
-    <div id="popularServiceImages">
+    <div class="services">
+        <h2>The most popular services in your area</h2>
+    </div>
+    <div id="popular-service-images">
         <img src="C:\dev\repos\TalentHubWebsite\images\emmaPainter.png">
         <img src="C:\dev\repos\TalentHubWebsite\images\markPainter.png">
         <img src="C:\dev\repos\TalentHubWebsite\images\susanPainter.png">
         <img src="C:\dev\repos\TalentHubWebsite\images\kevinPainter.png">
-    </div><br><br>
-    <div class="questionsOrComments">
+    </div>
+    <div class="questions-comments">
         <p>Questions or Comments?</p>
         <p><a href="#">Phone</a>    |   <a href="#">Email</a>   |   <a href="#">Address</a></p>
-    </div><br>
-        <footer>
-            <nav>
-                <ul>
-                  <li><a href="https://www.facebook.com/" class="fa fa-facebook"><img src="C:\dev\repos\TalentHubWebsite\images\facebookIcon.png" alt="Facebook Icon"></a></li>
-                  <li><a href="#">TalentHub</a></li>
-                  <li><a href= "mailto: info@talentHub.com">info@talentHub.com</a></li>
-                  <li><b>@ 2024</b></li>
+    </div>
+        </main>
+        <footer class="footer" width="100%">
+            <div class="container">
+            <nav class="menu-footer">
+                <ul class="list">
+                  <li class="list-item"><a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" rel="external"><img src="C:\dev\repos\TalentHubWebsite\images\facebookIcon.png" alt="Facebook Icon"></a></li>
+                  <li class="list-item"><a href="#">TalentHub</a></li>
+                  <li class="list-item"><a href= "mailto: info@talentHub.com">info@talentHub.com</a></li>
+                  <li class="list-item">Questions</li>
+                  <li class="list-item"><b>@ 2024</b></li>
                 </ul>
             </nav>
+            </div>
         </footer>
-</body>
+    </body>
 </html>

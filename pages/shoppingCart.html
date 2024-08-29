@@ -9,18 +9,20 @@
     <title>TalentHub_shoppingCart</title>
   </head>
   <body>
-      <header>
-        <nav>
-          <ul>
-            <li><a href="./home.html">TalentHub</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./loginForm.html">Login</a></li>
-            <li><a href="#">Cart</a></li>
-          </ul>
-        </nav>
-      </header>
-    <br /><br />
-    <table class="selectedServicesTable">
+    <header class="header">
+      <div class="container">
+          <nav class="menu-header">
+              <ul class="list">
+                  <li class="list-Item"><a href="./home.html">TalentHub</a></li>
+                  <li class="list-Item"><a href="./about.html">About</a></li>
+                  <li class="list-Item"><a href="./loginForm.html">Login</a></li>
+                  <li class="list-Item"><a href="./shoppingCart.html">Cart</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+  <div>
+    <table class="selected-services">
       <tr id="tableHeader">
         <th>Selected Services</th>
         <th>Qty</th>
@@ -65,29 +67,28 @@
         <td><strong>$489.99</strong></td>
       </tr>
     </table>
-    <br><br><br><br>
-    <button id="payForYourOrderButton" onclick="window.open('./payment.html', '_self');">Pay For Your Order</button><br><br><br><br>
-    <div class="questionsOrComments">
+  </div>
+    <div>
+      <button id="pay-for-order" onclick="window.open('./payment.html', '_self');">Pay For Your Order</button>
+    </div>
+    <div class="questions-comments">
       <p>Questions or Comments?</p>
       <p>
         <a href="#">Phone</a> | <a href="#">Email</a> | <a href="#">Address</a>
       </p>
-    </div><br>
-      <footer>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/" class="fa fa-facebook"
-                ><img
-                  src="C:\dev\repos\TalentHubWebsite\images\facebookIcon.png"
-                  alt="Facebook Icon"
-              /></a>
-            </li>
-            <li><a href="#">TalentHub</a></li>
-            <li><a href="mailto: info@talentHub.com">info@talentHub.com</a></li>
-            <li><b>@ 2024</b></li>
+    </div>
+    <footer class="footer" width="100%">
+      <div class="container">
+      <nav class="menu-footer">
+          <ul class="list">
+            <li class="list-Item"><a href="https://www.facebook.com/" class="fa fa-facebook" target="_blank" rel="external"><img src="C:\dev\repos\TalentHubWebsite\images\facebookIcon.png" alt="Facebook Icon"></a></li>
+            <li class="list-Item"><a href="#">TalentHub</a></li>
+            <li class="list-Item"><a href= "mailto: info@talentHub.com">info@talentHub.com</a></li>
+            <li class="list-Item">Questions</li>
+            <li class="list-Item"><b>@ 2024</b></li>
           </ul>
-        </nav>
-      </footer>
+      </nav>
+      </div>
+  </footer>
   </body>
 </html>
