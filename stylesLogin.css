@@ -4,15 +4,15 @@ body {
     justify-content: center;
     font-family: sans-serif;
     line-height: 1.5;
-    background: rgba(160, 123, 157, 0.5); /*#f3f3f3; */
+    background-color: #ede8f5;
     zoom: 90%;
 }
 
 .main {
-    background-color: rgba(177, 96, 171, 0.5);
+    background-color: #FFFF;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    margin-top: 1rem;
+    margin-top: 30px;
     padding: 10px 20px;
     width: 500px;
     text-align: center;
@@ -48,7 +48,7 @@ button {
     border: none;
     color: white;
     cursor: pointer;
-    background-color: #04AA6D; /*#4CAF50;*/
+    background-color: #919393;
     width: 100%;
     font-size: 16px;
 }
