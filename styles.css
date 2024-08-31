@@ -56,6 +56,38 @@ ul{
     box-shadow: 0 50vh 0 50vh;
 }
 
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-400px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(400px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+h1,
+.row1,
+.row3{
+    animation: slideInLeft 1s ease-in;
+}
+
+.description,
+.row2,
+.row4{
+    animation: slideInRight 1s ease-in;
+}
+
 .list {
     display: flex;
     align-items: center;
@@ -192,7 +224,7 @@ ul{
     list-style-type: none;
 }
 
-#view-offers{
+.view-offers{
     margin: 0 0 0 2rem;
     border-radius: .25rem;
     align-self: center;
@@ -257,25 +289,52 @@ th, td{
     padding: .25rem .5rem;
     text-align: center;
     white-space: nowrap;
-    font-size: .75rem;
+    font-size: 16px;
+    transition: all 0.3s;
 }
 
-#view-offers:hover,
-#add-to-cart:hover,
-#pay-for-order:hover,
-#pay-total-amount:hover{
-    opacity: 0.5;
+.pay-total-amount,
+.pay-for-order,
+.view-offers{
+    transform: translateY(-10px);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    background-color: #949696;
+    color: white;
+    border: 1px solid #121414;
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 
-#pay-for-order,
-#pay-total-amount{
+.pay-total-amount:hover,
+.pay-for-order:hover,
+.view-offers:hover,
+#add-to-cart:hover{
+    transform: translateY(-16px);
+    background-color:#ddd;
+    color: #121414;
+}
+
+.pay-total-amount:hover,
+.pay-for-order:hover,
+.view-offers:hover{
+    transform: translateY(-16px);
+}
+
+#add-to-cart:hover{
+    transform: translateY(-5px);
+}
+
+.pay-for-order,
+.pay-total-amount{
     display: block;
     margin: auto;
     margin-top: 40px;
     border-radius: .25rem;
     align-self: center;
     padding: 2rem;
-    background-color: #748D92;
+    background-color: #949696;
     color: white;
     padding: 1rem 2rem;
     text-align: center;
@@ -284,17 +343,17 @@ th, td{
 }
 
 .quantity input{
-    width: 3rem;
-    padding: .3em;
-    font-size: 1.2rem;
+    width: 50px;
+    padding: 5px;
+    font-size: 20px;
     text-align: center;
     font-weight: 900;
     background:white;
-    border: none;
+    border: 1px solid black;
  }
 
-#pay-total-amount{
-    width: 20rem;
+.pay-total-amount{
+    width: 320px;
 } 
 
 #nameOnCard,
