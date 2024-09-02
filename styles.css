@@ -13,6 +13,7 @@ body {
     background-color: #ede8f5;
     font-size: 20px;
     font-family: Poppins;
+    margin-top: 100px;
 }
 
 a {
@@ -23,15 +24,19 @@ li {
 }
 
 h1 {
-    color: rgb(15, 5, 15);
     text-align: center;
     margin-top: 40px;
+}
+
+h1, 
+h2, 
+h3{
+    color: rgb(77, 75, 75);
 }
   
 
 h2,
 h3 {
-    color: rgb(15, 5, 15);
     text-align: center;
     margin-top: 40px;
     margin-bottom: 10px;
@@ -42,18 +47,30 @@ ul{
     line-height: 2;
 }
 
+.header{
+    position: fixed;
+    width: 100%;
+    margin-top: -100px;
+}
+
 .menu-header,
 .menu-footer{
     padding: 10px 20px 20px 0px;
-    background-color: #FFFF;
+    
 }
 
 .menu-header {
     height: 70px;
+    background-color: #FFFF;
 }
 
 .menu-footer{
+    background-color: #FFFF;
     box-shadow: 0 50vh 0 50vh;
+}
+
+.footer{
+    margin-top: 100px;
 }
 
 @keyframes slideInLeft{
@@ -98,8 +115,8 @@ h1,
 }
 
 .list-Item {
- color: rgba(18, 18, 18, 0.4);
- font-size: 25px;;
+ color: whitesmoke;
+ font-size: 30px;;
 }
 .list-Item:hover {
     text-decoration: underline;
@@ -129,12 +146,25 @@ h1,
     font-size: 20px;
 }
 
+
+#welcome,
+#how-it-works, 
+#about-us, 
+#our-values{
+    margin-top: -20px;
+}
+
+#purchase-text{
+    margin-top: 100px;
+}
+
 #welcome,
 #how-it-works, 
 #about-us, 
 #our-values,
 #purchase-text{
-    margin-top: 40px;
+    margin-top: -20px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 800px;
@@ -153,19 +183,39 @@ h1,
 
 #services-popular-images,
 #services-related-images,
-.review{
+.review,
+.popular_tiles,
+.values{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 40px;
 }   
+
+.values p{
+    text-align: center;
+    line-height: 1.5;
+}
+
+.popular_tiles p,
+.review p{
+    text-align: left;
+    line-height: 1.1;
+}
 
 #services-related-images img{
     padding: 15px;
     width: 400px; 
     height: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.values{
+    margin-bottom: 10px;
+}
+
+.popular_tiles,
 .review{
     margin-bottom: 70px;
 }
@@ -176,6 +226,11 @@ h1,
     margin-bottom: 10px;
 }
 
+.popular_tiles img{
+    width: 212px;
+    height: 200px;
+}
+
 #services-popular-images img,
 .artists-list img{
     padding: 15px;
@@ -183,18 +238,26 @@ h1,
     height: 250px;
 }
 
+.values p,
+.review p{
+    height: 300px;
+}
+
+.popular_tiles p{
+    height: 400px;
+}
+
+.popular_tiles p,
+.values p,
 .review p {
     margin: 25px;
     background-color:#f2f3f4;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     margin-top: 30px;
     padding: 10px 20px 20px 20px;
     width: 250px;
-    height: 300px;
-    text-align: left;
     font-size: medium;
-    line-height: 1.1;
 }
 
 .questions-comments{
@@ -235,6 +298,11 @@ h1,
     text-align: center;
     white-space: nowrap;
     font-size: 16px;
+}
+
+.view-offers{
+    margin-left: 70px;
+    margin-top: 23px;
 }
  
 #about-us,
@@ -305,6 +373,7 @@ th, td{
     border: 1px solid #121414;
     border-radius: 5px;
     transition: all 0.3s;
+    margin-bottom: 70px;
 }
 
 .pay-total-amount:hover,
@@ -322,6 +391,10 @@ th, td{
     transform: translateY(-16px);
 }
 
+.popular_tiles p:hover{
+    transform: translateY(5px);
+}
+
 #add-to-cart:hover{
     transform: translateY(-5px);
 }
@@ -331,6 +404,7 @@ th, td{
     display: block;
     margin: auto;
     margin-top: 40px;
+    margin-bottom: 40px;
     border-radius: .25rem;
     align-self: center;
     padding: 2rem;
@@ -393,4 +467,9 @@ th, td{
 .quantity input,
 #artists option {
     border-radius: 5px;
+}
+
+.required_fields_text{
+    margin-top: -15px;
+    text-align: center;
 }
