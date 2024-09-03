@@ -1,7 +1,8 @@
-*, *::before, *::after {
+@import "stylesTiles.css";
+
+*{
     margin: 0;
     padding: 0;
-    border: none;
     box-sizing: border-box;
 }
 .html, body {
@@ -38,8 +39,8 @@ h3{
 h2,
 h3 {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 p,
@@ -51,26 +52,30 @@ ul{
     position: fixed;
     width: 100%;
     margin-top: -100px;
+    z-index: 999;
+}
+
+.main{
+    width: 50%;
 }
 
 .menu-header,
 .menu-footer{
     padding: 10px 20px 20px 0px;
-    
 }
 
-.menu-header {
+.menu-header{
     height: 70px;
     background-color: #FFFF;
 }
 
-.menu-footer{
-    background-color: #FFFF;
-    box-shadow: 0 50vh 0 50vh;
-}
-
 .footer{
-    margin-top: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background:#ede8f5;
 }
 
 @keyframes slideInLeft{
@@ -164,7 +169,7 @@ h1,
 #our-values,
 #purchase-text{
     margin-top: -20px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     width: 800px;
@@ -172,9 +177,11 @@ h1,
     font-size: large;
 }
 
-.services,
-.services-related{
-    margin-top: 50px;
+.services h2,
+.services-related h2,
+.review-title h2{
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .paymentForm{
@@ -193,6 +200,17 @@ h1,
     margin-bottom: 40px;
 }   
 
+.values{
+    width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.review{
+    margin-top: -30px;
+}
+
 .values p{
     text-align: center;
     line-height: 1.5;
@@ -206,13 +224,9 @@ h1,
 
 #services-related-images img{
     padding: 15px;
-    width: 400px; 
-    height: 250px;
+    width: 500px; 
+    height: 350px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.values{
-    margin-bottom: 10px;
 }
 
 .popular_tiles,
@@ -226,16 +240,25 @@ h1,
     margin-bottom: 10px;
 }
 
+.artist_tiles,
 .popular_tiles img{
-    width: 212px;
-    height: 200px;
+    width: 232px;
+    height: 222px;
+    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 #services-popular-images img,
 .artists-list img{
-    padding: 15px;
     width: 250px; 
     height: 250px;
+    margin: 20px
+}
+
+.artist_tiles button{
+    position: sticky;
+    margin-left: 10px;
+    margin-bottom: -10px;
 }
 
 .values p,
@@ -247,7 +270,7 @@ h1,
     height: 400px;
 }
 
-.popular_tiles p,
+.artist_tiles,
 .values p,
 .review p {
     margin: 25px;
@@ -255,7 +278,7 @@ h1,
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     margin-top: 30px;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 7px 4px 7px;
     width: 250px;
     font-size: medium;
 }
@@ -269,21 +292,18 @@ h1,
 #artist-image{
     float: left;    
     margin: 0 1rem 0 0;
-}
+} 
 
-.artists-list,
 .artists-list li{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;;
     align-items: center;
     font-size: 20px;
-    font-size: large;
-}
-
-.artists-list li{
     padding: 16px; 
     text-align: justify; 
-    width: 1000px;
+    width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
     list-style-type: none;
 }
 
@@ -321,6 +341,7 @@ h1,
     margin-right: auto;
     border-bottom: 2px solid #141414;
     margin-top: 40px;
+    margin-bottom: 100px;
     font-size: larger;
 } 
 
@@ -344,7 +365,7 @@ th, td{
 
 #tableHeader{
     font-size: 1.5rem;
-    height: 5rem;
+    height: 80px;
 }
 
 #add-to-cart{
@@ -391,7 +412,7 @@ th, td{
     transform: translateY(-16px);
 }
 
-.popular_tiles p:hover{
+.artist_tiles:hover{
     transform: translateY(5px);
 }
 

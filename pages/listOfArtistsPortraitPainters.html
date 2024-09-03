@@ -5,96 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kobi Labok" />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" href="../images/tabIcon.jfif">
+    <link rel="stylesheet" href="../stylesTiles.css" />
+    <link rel="icon" href="../images/tabIcon.jfif" />
     <title>TalentHub_ListOfArtists</title>
   </head>
   <body>
     <header class="header">
       <div class="container">
-          <nav class="menu-header">
-              <ul class="list">
-                  <li class="list-Item"><a href="./home.html">TalentHub</a></li>
-                  <li class="list-Item"><a href="./about.html">About</a></li>
-                  <li class="list-Item"><a href="./loginForm.html">Login</a></li>
-                  <li class="list-Item"><a href="./shoppingCart.html">Cart</a></li>
-              </ul>
-          </nav>
+        <nav class="menu-header">
+          <ul class="list">
+            <li class="list-Item"><a href="./home.html">HOME</a></li>
+            <li class="list-Item">
+              <a href="./about.html">ABOUT</a>
+            </li>
+            <li class="list-Item"><a href="./loginForm.html">LOGIN</a></li>
+            <li class="list-Item"><a href="./shoppingCart.html">CART</a></li>
+          </ul>
+        </nav>
       </div>
-  </header>
+    </header>
     <main>
-    <h2>The most popular Portrait Painters in your area</h2>
-    <br />
-    <div class="artists-list">
-      <ul>
-        <li class="row1">
-          <img
-            src="C:\dev\repos\TalentHubWebsite\images\emmaPainter.png"
-            alt="emma-painter"
-            id="artist-image"
-          />
-          <p>
-            I am Emma. My portrait painting service is dedicated to capturing
-            the essence and personality of individuals through exquisite,
-            handcrafted portraits. Whether you're looking for a timeless family
-            heirloom, a professional likeness, or a unique gift, our portraits
-            are crafted to be treasured for generations.
-          </p>
-          <button class="view-offers" onclick="window.open('./artistOffers.html', '_self');">View Offers</button>
-        </li>
-        <li class="row2">
-          <img
-            src="C:\dev\repos\TalentHubWebsite\images\kevinPainter.png"
-            alt="kevin-painter"
-            id="artist-image"
-          />
-          <p>
-            Whether you're looking for a timeless family heirloom, a
-            professional likeness, or a unique gift, our portraits are crafted
-            to be treasured for generations.
-          </p>
-          <button class="view-offers" onclick="window.open('./artistOffers.html', '_self');">View Offers</button>
-        </li>
-        <li class="row3">
-          <img
-            src="C:\dev\repos\TalentHubWebsite\images\susanPainter.png"
-            alt="susan-painter"
-            id="artist-image"
-          />
-          <p>
+      <div class="title">
+        <h2>The most popular Portrait Painters in your area</h2>
+      </div>
+      <div class="tiles">
+        <div class="artist_tiles">
+          <div>
+            <img
+              src="C:\dev\repos\TalentHub\TalentHub\images\markPainter.png"
+            />
+          </div>
+          <div>
+            Hello! I am Mark! I am very unique! My service extends to beloved
+            pets, capturing their unique personalities and charm in a portrait
+            that celebrates their place in your life.<br />
+          </div>
+          <div>
+            <button
+              class="view-offers"
+              onclick="window.open('./artistOffers.html', '_self');"
+            >
+              View
+            </button>
+          </div>
+        </div>
+        <div class="artist_tiles">
+          <div>
+            <img
+              src="C:\dev\repos\TalentHub\TalentHub\images\emmaPainter.png"
+            />
+          </div>
+          <div>
             My portrait painting service is dedicated to capturing the essence
             and personality of individuals through exquisite, handcrafted
-            portraits. Whether you're looking for a timeless family heirloom, a
-            professional likeness, or a unique gift.
-          </p>
-          <button class="view-offers" onclick="window.open('./artistOffers.html', '_self');">View Offers</button>
-        </li>
-        <li class="row4">
-          <img
-            src="C:\dev\repos\TalentHubWebsite\images\markPainter.png"
-            alt="mark-painter"
-            id="artist-image"
-          />
-          <p>
-            Hello! I am Mark! I drink and paint at the same time! This makes me
-            very unique! My service extends to beloved pets, capturing their
-            unique personalities and charm in a portrait that celebrates their
-            place in your life.
-          </p>
-          <button class="view-offers" onclick="window.open('./artistOffers.html', '_self');">View Offers</button>
-        </li>
-      </ul>
-    </div>
-  </main>
+            portraits.<br />
+          </div>
+          <div>
+            <button
+              class="view-offers"
+              onclick="window.open('./artistOffers.html', '_self');"
+            >
+              View
+            </button>
+          </div>
+        </div>
+        <div class="artist_tiles">
+          <div>
+            <img
+              src="C:\dev\repos\TalentHub\TalentHub\images\kevinPainter.png"
+            />
+          </div>
+          <div>
+            Whether you're looking for a timeless family heirloom, a
+            professional likeness, or a unique gift, our portraits are crafted
+            to be treasured for generations.<br />
+          </div>
+          <div>
+            <button
+              class="view-offers"
+              onclick="window.open('./artistOffers.html', '_self');"
+            >
+              View
+            </button>
+          </div>
+        </div>
+        <div class="artist_tiles">
+          <div>
+            <img
+              src="C:\dev\repos\TalentHub\TalentHub\images\susanPainter.png"
+            />
+          </div>
+          <div>
+            My portrait painting service is dedicated to capturing the essence
+            and personality of individuals through exquisite, handcrafted
+            portraits. <br />
+          </div>
+          <div>
+            <button
+              class="view-offers"
+              onclick="window.open('./artistOffers.html', '_self');"
+            >
+              View
+            </button>
+          </div>
+        </div>
+        <div class="artist_tiles">
+          <div>
+            <img
+              src="C:\dev\repos\TalentHub\TalentHub\images\markPainter.png"
+            />
+          </div>
+          <div>
+            Hello! I am Mark! I am very unique! My service extends to beloved
+            pets, capturing their unique personalities and charm in a portrait
+            that celebrates their place in your life.<br />
+          </div>
+          <div>
+            <button
+              class="view-offers"
+              onclick="window.open('./artistOffers.html', '_self');"
+            >
+              View
+            </button>
+          </div>
+        </div>
+        <div class="artist_tiles">
+          <div>
+            <img
+              src="C:\dev\repos\TalentHub\TalentHub\images\emmaPainter.png"
+            />
+          </div>
+          <div>
+            My portrait painting service is dedicated to capturing the essence
+            and personality of individuals through exquisite, handcrafted
+            portraits.<br />
+          </div>
+          <div>
+            <button
+              class="view-offers"
+              onclick="window.open('./artistOffers.html', '_self');"
+            >
+              View
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer class="footer" width="100%">
       <div class="container">
-      <nav class="menu-footer">
+        <nav class="menu-footer">
           <ul class="list">
-            <li class="list-item">© 2024 Talenthub.com Global Limited. Terms & Conditions / Cookie policy / Privacy policy</li>
+            <li class="list-item">
+              © 2024 Talenthub.com Global Limited. Terms & Conditions / Cookie
+              policy / Privacy policy
+            </li>
             <li class="list-item">Change Language</li>
-            <li class="list-item"><a href= "mailto: info@talentHub.com">info@talentHub.com</a></li>
+            <li class="list-item">
+              <a href="mailto: info@talentHub.com">info@talentHub.com</a>
+            </li>
           </ul>
-      </nav>
+        </nav>
       </div>
-  </footer>
+    </footer>
   </body>
 </html>

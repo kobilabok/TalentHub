@@ -5,114 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Kobi Labok" />
     <link rel="stylesheet" href="../styles.css" />
-    <link rel="icon" href="../images/tabIcon.jfif">
+    <link rel="icon" href="../images/tabIcon.jfif" />
     <title>TalentHub_artistOffers</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+      <header class="header">
+        <div class="container">
           <nav class="menu-header">
-              <ul class="list">
-                  <li class="list-Item"><a href="./home.html">TalentHub</a></li>
-                  <li class="list-Item"><a href="./about.html">About</a></li>
-                  <li class="list-Item"><a href="./loginForm.html">Login</a></li>
-                  <li class="list-Item"><a href="./shoppingCart.html">Cart</a></li>
-              </ul>
+            <ul class="list">
+              <li class="list-Item"><a href="./home.html">HOME</a></li>
+              <li class="list-Item">
+                <a href="./about.html">ABOUT</a>
+              </li>
+              <li class="list-Item"><a href="./loginForm.html">LOGIN</a></li>
+              <li class="list-Item"><a href="./shoppingCart.html">CART</a></li>
+            </ul>
           </nav>
+        </div>
+      </header>
+      <main>
+        <div>
+          <h2>Provided Services by the selected artist</h2>
+        </div>
+      <div class="artists-list">
+        <ul>
+          <li>
+            <img
+              src="C:\dev\repos\TalentHubWebsite\images\emmaPainter.png"
+              alt="emmaPainter"
+              id="artistImage"
+            />
+            <p>
+              I am Emma. My portrait painting service is dedicated to capturing
+              the essence and personality of individuals through exquisite,
+              handcrafted portraits. Whether you're looking for a timeless
+              family heirloom, a professional likeness, or a unique gift, our
+              portraits are crafted to be treasured for generations.
+            </p>
+          </li>
+        </ul>
       </div>
-  </header>
-    <h2>Provided Services by the selected artist</h2>
-    <br />
-    <div class="artists-list">
-      <ul>
-        <li>
-          <img
-            src="C:\dev\repos\TalentHubWebsite\images\emmaPainter.png"
-            alt="emmaPainter"
-            id="artistImage"
-          />
-          <p>
-            I am Emma. My portrait painting service is dedicated to capturing
-            the essence and personality of individuals through exquisite,
-            handcrafted portraits. Whether you're looking for a timeless family
-            heirloom, a professional likeness, or a unique gift, our portraits
-            are crafted to be treasured for generations.
-          </p>
-        </li>
-      </ul>
+      <div>
+      <table class="provided-services">
+        <tr id="tableHeader">
+          <th>List of Services</th>
+          <th>Canvas Size</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+        <tbody>
+          <tr>
+            <th colspan="1" rowspan="3">Custom Portrait</th>
+            <td>18 x 24</td>
+            <td><strong>$99.99</strong></td>
+            <td><button id="add-to-cart">Add To Cart</button></td>
+          </tr>
+          <tr>
+            <td>24 x 24</td>
+            <td><strong>$129.99</strong></td>
+            <td><button id="add-to-cart">Add To Cart</button></td>
+          </tr>
+          <tr>
+            <td>30 x 24</td>
+            <td><strong>$159.99</strong></td>
+            <td style="height: 5rem">
+              <button id="add-to-cart">Add To Cart</button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <th colspan="1" rowspan="3">Family Portrait</th>
+            <td>18 x 24</td>
+            <td><strong>$99.99</strong></td>
+            <td><button id="add-to-cart">Add To Cart</button></td>
+          </tr>
+          <tr>
+            <td>24 x 24</td>
+            <td><strong>$129.99</strong></td>
+            <td><button id="add-to-cart">Add To Cart</button></td>
+          </tr>
+          <tr>
+            <td>30 x 24</td>
+            <td><strong>$159.99</strong></td>
+            <td style="height: 5rem">
+              <button id="add-to-cart">Add To Cart</button>
+            </td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <th colspan="1" rowspan="3">Pets Portrait</th>
+            <td>18 x 24</td>
+            <td><strong>$99.99</strong></td>
+            <td><button id="add-to-cart">Add To Cart</button></td>
+          </tr>
+          <tr>
+            <td>24 x 24</td>
+            <td><strong>$129.99</strong></td>
+            <td><button id="add-to-cart">Add To Cart</button></td>
+          </tr>
+          <tr>
+            <td>30 x 24</td>
+            <td><strong>$159.99</strong></td>
+            <td>
+              <button id="add-to-cart">
+                <a href="./shoppingCart.html">Add To Cart</a>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <table class="provided-services">
-      <tr id="tableHeader">
-        <th>List of Services</th>
-        <th>Canvas Size</th>
-        <th>Price</th>
-        <th></th>
-      </tr>
-      <tbody>
-        <tr>
-          <th colspan="1" rowspan="3">Custom Portrait</th>
-          <td>18 x 24</td>
-          <td><strong>$99.99</strong></td>
-          <td><button id="add-to-cart">Add To Cart</button></td>
-        </tr>
-        <tr>
-          <td>24 x 24</td>
-          <td><strong>$129.99</strong></td>
-          <td><button id="add-to-cart">Add To Cart</button></td>
-        </tr>
-        <tr>
-          <td>30 x 24</td>
-          <td><strong>$159.99</strong></td>
-          <td style="height: 5rem;"><button id="add-to-cart">Add To Cart</button></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <th colspan="1" rowspan="3">Family Portrait</th>
-          <td>18 x 24</td>
-          <td><strong>$99.99</strong></td>
-          <td><button id="add-to-cart">Add To Cart</button></td>
-        </tr>
-        <tr>
-          <td>24 x 24</td>
-          <td><strong>$129.99</strong></td>
-          <td><button id="add-to-cart">Add To Cart</button></td>
-        </tr>
-        <tr>
-          <td>30 x 24</td>
-          <td><strong>$159.99</strong></td>
-          <td style="height: 5rem;"><button id="add-to-cart">Add To Cart</button></td>
-        </tr>
-      </tbody>
-      <tbody>
-        <tr>
-          <th colspan="1" rowspan="3">Pets Portrait</th>
-          <td>18 x 24</td>
-          <td><strong>$99.99</strong></td>
-          <td><button id="add-to-cart">Add To Cart</button></td>
-        </tr>
-        <tr>
-          <td>24 x 24</td>
-          <td><strong>$129.99</strong></td>
-          <td><button id="add-to-cart">Add To Cart</button></td>
-        </tr>
-        <tr>
-          <td>30 x 24</td>
-          <td><strong>$159.99</strong></td>
-          <td><button id="add-to-cart"><a href="./shoppingCart.html">Add To Cart</a></button></td>
-        </tr>
-      </tbody>      
-    </table>
+    </main>
     <footer class="footer" width="100%">
       <div class="container">
-      <nav class="menu-footer">
+        <nav class="menu-footer">
           <ul class="list">
-            <li class="list-item">© 2024 Talenthub.com Global Limited. Terms & Conditions / Cookie policy / Privacy policy</li>
+            <li class="list-item">
+              © 2024 Talenthub.com Global Limited. Terms & Conditions / Cookie
+              policy / Privacy policy
+            </li>
             <li class="list-item">Change Language</li>
-            <li class="list-item"><a href= "mailto: info@talentHub.com">info@talentHub.com</a></li>
+            <li class="list-item">
+              <a href="mailto: info@talentHub.com">info@talentHub.com</a>
+            </li>
           </ul>
-      </nav>
+        </nav>
       </div>
-  </footer>
+    </footer>
   </body>
 </html>
